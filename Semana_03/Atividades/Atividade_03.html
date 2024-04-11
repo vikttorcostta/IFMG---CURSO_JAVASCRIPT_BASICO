@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 - Semana 03</title>
+</head>
+<body>
+
+    <script>
+
+       let lista = [];
+       let novoItem = prompt("Digite o nome do item ou - se não quiser add");
+
+       while (novoItem != "-") {
+            lista.push(novoItem);
+            let novoItem = prompt("Digite o nome do item ou - se não quiser add");
+       }
+
+       if (lista.length == 0) {
+            prompt("Sua lista está vazia");
+       } else {
+            alert("Voce deve comprar esses ítens: ")
+            for (let index = 0; index < lista.length; index++) {
+                alert(lista[index]); 
+            }
+       }
+
+
+        
+    </script>
+    
+</body>
+</html>
